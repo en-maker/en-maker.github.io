@@ -1,0 +1,9 @@
+li:hover span.cross:after{
+    content:"\0274C";
+    color:red;
+    cursor: pointer;
+}
+
+#textInput{
+    text-transform: uppercase;
+}
