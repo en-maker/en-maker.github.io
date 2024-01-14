@@ -16,18 +16,18 @@
         <div class="alert alert-danger" role="alert" ng-show="errMess">{{errMess}}</div>
         <!-- End alert error -->
         <!-- Start list subcontainer -->
-        <div class="row pb-2">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between" ng-repeat="x in list">{{x}}<span class="cross" ng-click="removeItem($index)"></span></li>
+        <div class="row mb-2">
+            <ul class="list-group list-group-flush pe-0">
+                <li class="list-group-item" ng-repeat="x in list">{{x}}<span class="cross ms-4" ng-click="removeItem($index)"></span></li>
             </ul>
         </div>
         <!-- End list subcontainer -->
         <!-- Start input subcontainer -->
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
                 <input type="text" id="textInput" class="form-control" placeholder="Add a new item" ng-model="item">
             </div>
-            <div class="col-2">
+            <div class="col-1">
                 <button class="btn btn-primary" ng-click="addItem()" title="Add item button">ADD</button>
             </div>
         </div>
